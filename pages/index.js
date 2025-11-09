@@ -79,7 +79,7 @@ export default function Home() {
           </p>
 
           {/* Grid responsive: 1 columna en móvil, 3 en md+ */}
-          <div className="grid p-12 grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid px-12 md:p-0 grid-cols-1 md:grid-cols-3 gap-6"> 
             {faces.map((face) => (
               <button
                 key={face.id}
