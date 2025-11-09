@@ -51,11 +51,11 @@ export default function Home() {
         return `${base} ring-4 ring-offset-2 ring-green-500 scale-105 bg-green-50`;
     } else {
       if (face.color === "red")
-        return `${base} ring-2 ring-red-100 hover:ring-red-400`;
+        return `${base} ring-2 ring-red-200 hover:ring-red-400`;
       if (face.color === "yellow")
-        return `${base} ring-2 ring-yellow-100 hover:ring-yellow-400`;
+        return `${base} ring-2 ring-yellow-200 hover:ring-yellow-400`;
       if (face.color === "green")
-        return `${base} ring-2 ring-green-100 hover:ring-green-400`;
+        return `${base} ring-2 ring-green-200 hover:ring-green-400`;
     }
 
     return base;
@@ -76,7 +76,7 @@ export default function Home() {
             Selecciona una opción.
           </p>
 
-          <div className="flex items-center justify-between gap-8">
+          <div className="flex items-center justify-between gap-8flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             {faces.map((face) => (
               <div
                 key={face.id}
